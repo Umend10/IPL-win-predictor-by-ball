@@ -1,13 +1,8 @@
-
-from math import ceil, floor
 import streamlit as st
 import pandas as pd
-import numpy as np
 import pickle
 from sklearn.compose import ColumnTransformer
 pipe=pickle.load(open("pipe.pkl",'rb'))
-pipe_rf=pickle.load(open('pipe_rf.pkl','rb'))
-
 
 team=['Sunrisers Hyderabad', 'Royal Challengers Bangalore',
        'Kolkata Knight Riders', 'Kings XI Punjab', 'Delhi Capitals',
